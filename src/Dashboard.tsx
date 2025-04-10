@@ -8,31 +8,31 @@ import { Box } from '@mui/material';
 
 export const Dashboard = () => {
   return (
-    <AppBar sx={{ backgroundColor: '#515B63' }} position="fixed">
+    <AppBar sx={{ backgroundColor: '#69a2b0' }} position="fixed">
       <Container maxWidth="md">
         <Toolbar disableGutters>
           <Typography
-            variant="h5"
+            variant="h1"
             noWrap
             component={Link}
             to="/"
             sx={{
               display: { md: 'flex' },
-              flexGrow: 1,
+              flexGrow: 2,
               fontFamily: 'monospace',
               fontWeight: 700,
+              fontSize: '36px',
               letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
               alignItems: 'center',
               '&:hover': {
-                color: '#E3A446',
+                color: '#ed4d6e',
               },
             }}
           >
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-              <Typography sx={{ fontStyle: 'italic' }}>Anemia</Typography>
-              <Typography sx={{ fontStyle: 'italic' }}>in Runners</Typography>
+              <Typography sx={{ fontStyle: 'italic', fontSize: '24px', fontColor: 'black' }}>Anemia in Runners</Typography>
             </Box>
           </Typography>
         </Toolbar>
